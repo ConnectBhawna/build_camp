@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const program = [
   {
     day: "Day 1",
@@ -60,8 +62,8 @@ const program = [
     outcome: "Every team leaves with momentum and a clear build direction.",
   },
   {
-    day: "Day 6",
-    date: "9 July 2026",
+    day: "Day 6 & 7",
+    date: "9th & 10th July 2026",
     title: "Mentorship & Shipping Day",
     topics: [
       "Office hours with mentors and technical debugging support",
@@ -73,10 +75,10 @@ const program = [
   },
   {
     day: "Day 7",
-    date: "10 July 2026",
-    title: "Demo Day + Community Meetup",
+    date: "11th July 2026",
+    title: "Demo Day + Community Meetup with Road to Devcon",
     topics: [
-      "Final demos, winner announcement, and builder networking",
+      "Final demos, winner announcement and builder networking",
       "Road to Devcon discussion and future Ethereum opportunities",
       "Optional hybrid meetup stream for standout projects",
     ],
@@ -126,7 +128,7 @@ export default function Home() {
             </nav>
             <a
               href="#join"
-              className="rounded-full bg-[var(--foreground)] px-4 py-2 text-sm font-medium text-[var(--background)] transition-transform hover:-translate-y-0.5"
+              className="rounded-full bg-[var(--foreground)] px-4 py-2 text-sm font-medium !text-white transition-transform hover:-translate-y-0.5"
             >
               Join the camp
             </a>
@@ -134,18 +136,34 @@ export default function Home() {
         </header>
 
         <section className="relative overflow-hidden rounded-[2rem] border border-[var(--line)] bg-[var(--surface-strong)] px-5 py-8 shadow-[0_24px_80px_rgba(19,32,51,0.08)] sm:px-8 sm:py-12 lg:px-12 lg:py-16">
+          <div className="absolute inset-0">
+            <Image
+              src="/eth-build-camp-hero.png"
+              alt="Illustrated Ethereum Build Camp hero artwork"
+              fill
+              priority
+              className="object-cover object-center opacity-80"
+            />
+            <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(248,244,234,0.97)_0%,rgba(248,244,234,0.88)_28%,rgba(248,244,234,0.38)_58%,rgba(248,244,234,0.16)_100%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.28),transparent_46%)]" />
+            <div className="absolute inset-y-0 right-0 w-[44%] bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.02))]" />
+          </div>
           <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-sky-400/70 to-transparent" />
-          <div className="grid gap-12 lg:grid-cols-[1.3fr_0.7fr] lg:items-end">
+          <div className="relative z-10 grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-center">
             <div className="max-w-4xl">
               <p className="mb-5 text-[0.72rem] uppercase tracking-[0.3em] text-slate-500">
                 Virtual bootcamp for the next wave of Ethereum builders
               </p>
-              <h1 className="max-w-4xl text-5xl leading-[0.94] font-semibold tracking-[-0.05em] text-slate-950 sm:text-7xl lg:text-[6.8rem]">
-                Learn the stack.
-                <br />
-                Build onchain.
-                <br />
-                Ship with people.
+              <h1 className="max-w-5xl text-[2.7rem] leading-[0.98] font-semibold tracking-[-0.05em] text-slate-950 sm:text-[3.8rem] lg:text-[5.4rem] xl:text-[6.1rem]">
+                <span className="block lg:whitespace-nowrap">
+                  Learn the stack.
+                </span>
+                <span className="block lg:whitespace-nowrap">
+                  Build onchain.
+                </span>
+                <span className="block lg:whitespace-nowrap">
+                  Ship with people.
+                </span>
               </h1>
               <p className="mt-6 max-w-2xl text-base leading-8 text-slate-700 sm:text-lg">
                 Ethereum Build Camp is a seven-day online bootcamp for curious
@@ -154,12 +172,12 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="space-y-4 rounded-[1.75rem] border border-[var(--line)] bg-white/70 p-5 backdrop-blur-sm">
+            <div className="ml-auto w-full max-w-[38rem] space-y-5 rounded-[1.6rem] border border-white/60 bg-white/74 p-7 shadow-[0_20px_60px_rgba(19,32,51,0.08)] backdrop-blur-md sm:p-8 lg:p-9">
               <div className="flex items-center justify-between border-b border-[var(--line)] pb-4">
                 <span className="text-[0.75rem] uppercase tracking-[0.25em] text-slate-500">
                   Dates
                 </span>
-                <span className="text-sm font-medium text-slate-800">
+                <span className="text-base font-medium text-slate-800 sm:text-[1.1rem]">
                   4 July - 10 July 2026
                 </span>
               </div>
@@ -167,7 +185,7 @@ export default function Home() {
                 <span className="text-[0.75rem] uppercase tracking-[0.25em] text-slate-500">
                   Format
                 </span>
-                <span className="text-sm font-medium text-slate-800">
+                <span className="text-base font-medium text-slate-800 sm:text-[1.1rem]">
                   Fully virtual
                 </span>
               </div>
@@ -175,14 +193,14 @@ export default function Home() {
                 <span className="text-[0.75rem] uppercase tracking-[0.25em] text-slate-500">
                   Outcome
                 </span>
-                <span className="text-right text-sm font-medium text-slate-800">
+                <span className="max-w-[13rem] text-right text-base font-medium text-slate-800 sm:text-[1.1rem]">
                   From first wallet to first dApp
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="mt-10 flex flex-wrap gap-3 text-sm text-slate-700">
+          <div className="relative z-10 mt-10 flex flex-wrap gap-3 text-sm text-slate-700">
             {[
               "Talks",
               "Workshops",
@@ -372,7 +390,7 @@ export default function Home() {
             <div className="mt-8 flex flex-col gap-4 sm:flex-row">
               <a
                 href="mailto:hello@ethereumbuildcamp.xyz?subject=Ethereum%20Build%20Camp"
-                className="inline-flex items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium text-[var(--background)] transition-transform hover:-translate-y-0.5"
+                className="inline-flex items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium !text-white transition-transform hover:-translate-y-0.5"
               >
                 Apply to join
               </a>
