@@ -12,9 +12,10 @@ export default function Nav() {
           </Link>
         </div>
         <nav className="hidden items-center gap-6 text-sm text-slate-700 md:flex">
-          <Link href="/program" className="hover:text-slate-950 transition-colors">Schedule</Link>
-          <Link href="/tracks" className="hover:text-slate-950 transition-colors">Tracks</Link>
-          <Link href="/community" className="hover:text-slate-950 transition-colors">Community</Link>
+          <Link href="/" className="hover:text-slate-950 transition-colors">Home</Link>
+          <Link href="/program" className="hover:text-slate-950 transition-colors">Curriculum</Link>
+          <Link href="/tracks" className="hover:text-slate-950 transition-colors">Tracks & Prizes</Link>
+          <Link href="/faq" className="hover:text-slate-950 transition-colors">FAQ</Link>
         </nav>
         <Link
           href="/#join"

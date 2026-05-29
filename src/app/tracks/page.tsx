@@ -1,12 +1,42 @@
 import Nav from "../components/Nav";
 
 const tracks = [
-  "DeFi",
-  "AI x Ethereum",
-  "Consumer crypto",
-  "Infra tooling",
-  "Public goods",
-  "Onchain social",
+  {
+    name: "Best use of DeFi",
+    description:
+      "Build a project around decentralized finance think lending, borrowing, DEXs, yield strategies, or novel financial primitives on-chain",
+    prize: "Mechanical Keyboard + $25 cash + goodies",
+  },
+  {
+    name: "Best use of AI x Ethereum",
+    description:
+      "Combine AI and Ethereum to create something new autonomous agents, AI-driven smart contracts, on-chain inference or verifiable ML outputs.",
+    prize: "Mechanical Keyboard + $25 cash + goodies",
+  },
+  {
+    name: "Best use of Consumer crypto",
+    description:
+      "Build a crypto product designed for everyday users focus on seamless UX, real-world utility, and making web3 accessible to the mainstream.",
+    prize: "Mechanical Keyboard + $25 cash + goodies",
+  },
+  {
+    name: "Best use of Infra tooling",
+    description:
+      "Create tools and infrastructure that help developers build better on Ethereum SDKs, dev tooling, indexers, RPC improvements or protocol primitives.",
+    prize: "Mechanical Keyboard + $25 cash + goodies",
+  },
+  {
+    name: "Best use of Public goods",
+    description:
+      "Build something that benefits the broader ecosystem open-source tools, community resources, or projects that prioritize impact over profit.",
+    prize: "Mechanical Keyboard + $25 cash + goodies",
+  },
+  {
+    name: "Best use of Onchain social",
+    description:
+      "Build social experiences powered by the blockchain decentralized identity, on-chain reputation, community platforms or social graphs.",
+    prize: "Mechanical Keyboard + $25 cash + goodies",
+  },
 ];
 
 export default function TracksPage() {
@@ -25,31 +55,33 @@ export default function TracksPage() {
           <div className="mt-10 flex flex-wrap gap-3">
             {tracks.map((track) => (
               <span
-                key={track}
+                key={track.name}
                 className="rounded-full border border-[var(--line)] bg-[var(--background)] px-5 py-2.5 text-base text-slate-800"
               >
-                {track}
+                {track.name}
               </span>
             ))}
           </div>
           <p className="mt-10 max-w-2xl text-base leading-8 text-slate-700">
-            The format is intentionally broad enough for experimentation and
-            focused enough to keep teams moving toward an MVP by demo day.
+            The format is intentionally broad enough for experimentation and focused enough to keep teams moving toward an MVP by demo day.
           </p>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {tracks.map((track) => (
               <div
-                key={track}
+                key={track.name}
                 className="rounded-[1.6rem] border border-[var(--line)] bg-[var(--surface-strong)] p-6"
               >
                 <h3 className="text-xl font-semibold tracking-[-0.03em] text-slate-950">
-                  {track}
+                  {track.name}
                 </h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600">
-                  Build a project in the {track} space and present it on Demo
-                  Day for a chance to win track prizes and ecosystem recognition.
+                  {track.description}
                 </p>
+                <div className="mt-4 flex items-center gap-2 rounded-xl border border-[var(--line)] bg-white/70 px-4 py-3">
+                  <span className="text-lg">🏆</span>
+                  <p className="text-xs font-medium text-slate-700">{track.prize}</p>
+                </div>
               </div>
             ))}
           </div>
