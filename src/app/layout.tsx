@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Ethereum Build Camp",
   description:
-    "A virtual Ethereum bootcamp for builders learning, building, and shipping onchain from July 4 to July 10, 2026.",
+    "A virtual Ethereum bootcamp for builders learning, building, and shipping onchain from July 4 to July 11, 2026.",
 };
 
 export default function RootLayout({

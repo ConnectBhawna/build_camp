@@ -32,7 +32,7 @@ const faqs = [
   {
     question: "What are the prizes?",
     answer:
-      "Each track winner receives a Mechanical Keyboard + $25 cash + goodies. Winners are selected based on creativity, technical execution, and impact.",
+      "Each track winner receives a mechanical keyboard + goodies. Winners are selected based on creativity, technical execution, and impact.",
   },
   {
     question: "Will there be mentors available?",

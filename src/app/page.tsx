@@ -42,7 +42,7 @@ export default function Home() {
                   </span>
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-slate-700 sm:text-lg">
-                  Ethereum Build Camp is a seven-day online bootcamp for curious
+                  Ethereum Build Camp is an eight-day online bootcamp for curious
                   builders who want to go from first wallet interaction to demo
                   day momentum in one focused week.
                 </p>
@@ -68,7 +68,7 @@ export default function Home() {
                     Dates
                   </span>
                   <span className="text-base font-medium text-slate-800 sm:text-[1.1rem]">
-                    4 July - 10 July 2026
+                    4 July - 11 July 2026
                   </span>
                 </div>
                 <div className="flex items-center justify-between border-b border-[var(--line)] pb-4">
