@@ -5,6 +5,14 @@ const program = [
     day: "Day 1",
     date: "4 July 2026",
     title: "Welcome to Ethereum",
+    speaker: {
+      name: "@Unnati_builds24",
+      role: "Session speaker",
+      handle: "@Unnati_builds24",
+      href: "https://x.com/Unnati_builds24",
+      photo: "https://unavatar.io/x/Unnati_builds24",
+      bio: "Focused on helping new builders understand Ethereum basics, wallets, gas, and first onchain actions.",
+    },
     topics: [
       "What Ethereum is and why it matters",
       "Blockchain fundamentals, wallets, gas fees, and transactions",
@@ -17,6 +25,14 @@ const program = [
     day: "Day 2",
     date: "5 July 2026",
     title: "Solidity & Smart Contracts",
+    speaker: {
+      name: "@panditdhamdhere",
+      role: "Session speaker",
+      handle: "@panditdhamdhere",
+      href: "https://x.com/panditdhamdhere",
+      photo: "https://unavatar.io/x/panditdhamdhere",
+      bio: "Focused on Solidity fundamentals, smart contract architecture, and helping builders deploy with confidence.",
+    },
     topics: [
       "Solidity basics, variables, functions, and mappings",
       "ERC20s, NFTs, contract architecture, and security basics",
@@ -29,6 +45,13 @@ const program = [
     day: "Day 3",
     date: "6 July 2026",
     title: "Building Your First dApp",
+    speaker: {
+      name: "Speaker reveal soon",
+      role: "Speaker to be revealed",
+      handle: "Announcement coming soon",
+      href: "#",
+      bio: "We will reveal the speaker for this session soon.",
+    },
     topics: [
       "Frontend and smart contract interaction",
       "ethers.js or viem, wallet connection, and event handling",
@@ -41,6 +64,13 @@ const program = [
     day: "Day 4",
     date: "7 July 2026",
     title: "Modern Ethereum Stack",
+    speaker: {
+      name: "Speaker reveal soon",
+      role: "Speaker to be revealed",
+      handle: "Announcement coming soon",
+      href: "#",
+      bio: "We will reveal the speaker for this session soon.",
+    },
     topics: [
       "Layer 2s, account abstraction, and onchain identity",
       "DeFi primitives, AI x Ethereum, and public goods culture",
@@ -53,6 +83,14 @@ const program = [
     day: "Day 5",
     date: "8 July 2026",
     title: "Buildathon Kickoff",
+    speaker: {
+      name: "@ConnectBhawna",
+      role: "Session speaker",
+      handle: "@ConnectBhawna",
+      href: "https://x.com/ConnectBhawna",
+      photo: "https://unavatar.io/x/ConnectBhawna",
+      bio: "Focused on problem framing, team formation, pitch clarity, and helping builders start the buildathon with momentum.",
+    },
     topics: [
       "Problem statements, team formation, and pitch craft",
       "MVP thinking and what judges actually look for",
@@ -65,6 +103,13 @@ const program = [
     day: "Day 6",
     date: "9 July 2026",
     title: "Mentor Office Hours & Iteration",
+    speaker: {
+      name: "Speaker reveal soon",
+      role: "Speaker to be revealed",
+      handle: "Announcement coming soon",
+      href: "#",
+      bio: "We will reveal the speaker for this session soon.",
+    },
     topics: [
       "Office hours with mentors and technical debugging support",
       "UI and UX reviews, contract feedback, and pitch iteration",
@@ -77,6 +122,13 @@ const program = [
     day: "Day 7",
     date: "10 July 2026",
     title: "Buildathon Submission Day",
+    speaker: {
+      name: "Speaker reveal soon",
+      role: "Speaker to be revealed",
+      handle: "Announcement coming soon",
+      href: "#",
+      bio: "We will reveal the speaker for this session soon.",
+    },
     topics: [
       "Submission of Build-a-thon project",
       "Final polish across product, smart contracts, and presentation",
@@ -89,6 +141,18 @@ const program = [
     day: "Day 8",
     date: "11th July 2026",
     title: "Demo Day & Winner's Announcement in the RTD",
+    cta: {
+      label: "Apply for the event",
+      href: "https://luma.com/17qwjp3b",
+    },
+    speaker: {
+      name: "@candufaz",
+      role: "Session speaker",
+      handle: "@candufaz",
+      href: "https://x.com/candufaz",
+      photo: "https://unavatar.io/x/candufaz",
+      bio: "Focused on demo-day storytelling, judging energy, and celebrating standout projects at the final showcase.",
+    },
     topics: [
       "Final project demos in front of mentors, judges, and the community",
       "Winner's announcement in the RTD",
@@ -97,12 +161,6 @@ const program = [
     highlight: "A public finale that celebrates shipping and community momentum.",
     outcome: "Projects are showcased, winners are announced, and teams leave visible.",
   },
-];
-
-const rhythm = [
-  "1 educational session",
-  "1 hands-on workshop",
-  "1 networking or community activity",
 ];
 
 export default function ProgramPage() {
@@ -142,42 +200,90 @@ export default function ProgramPage() {
                   </p>
                   <p className="mt-2 text-sm text-slate-300">{item.date}</p>
                 </div>
-                <div>
-                  <h3 className="text-2xl font-semibold tracking-[-0.03em]">
-                    {item.title}
-                  </h3>
-                  <ul className="mt-4 grid gap-2 text-sm leading-7 text-slate-300">
-                    {item.topics.map((topic) => (
-                      <li key={topic}>• {topic}</li>
-                    ))}
-                  </ul>
-                  <p className="mt-5 text-sm font-medium text-[#9fe4d5]">
-                    {item.highlight}
-                  </p>
-                  <p className="mt-2 text-sm text-slate-200">
-                    Outcome: {item.outcome}
-                  </p>
+                <div className="grid gap-6 xl:grid-cols-[minmax(0,1fr)_260px] xl:items-start">
+                  <div>
+                    <h3 className="text-2xl font-semibold tracking-[-0.03em]">
+                      {item.title}
+                    </h3>
+                    <ul className="mt-4 grid gap-2 text-sm leading-7 text-slate-300">
+                      {item.topics.map((topic) => (
+                        <li key={topic}>• {topic}</li>
+                      ))}
+                    </ul>
+                    <p className="mt-5 text-sm font-medium text-[#9fe4d5]">
+                      {item.highlight}
+                    </p>
+                    <p className="mt-2 text-sm text-slate-200">
+                      Outcome: {item.outcome}
+                    </p>
+                    {item.cta ? (
+                      <a
+                        href={item.cta.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="mt-5 inline-flex items-center justify-center rounded-full bg-[#5bb8b2] px-5 py-3 text-sm font-medium text-white transition-transform hover:-translate-y-0.5 hover:bg-[#4da79f]"
+                      >
+                        {item.cta.label}
+                      </a>
+                    ) : null}
+                  </div>
+
+                  {item.speaker ? (
+                    <aside className="rounded-[1.4rem] border border-white/10 bg-white/8 p-4 shadow-[0_18px_40px_rgba(0,0,0,0.18)]">
+                      <p className="text-[0.68rem] uppercase tracking-[0.26em] text-sky-200/75">
+                        Speaker
+                      </p>
+                      <div className="mt-4 flex items-center gap-3">
+                        {item.speaker.href !== "#" ? (
+                          <img
+                            src={item.speaker.photo}
+                            alt={`${item.speaker.handle} profile`}
+                            className="h-16 w-16 rounded-2xl border border-white/10 object-cover"
+                            loading="lazy"
+                            referrerPolicy="no-referrer"
+                          />
+                        ) : (
+                          <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white/10 bg-slate-200">
+                            <div className="relative h-10 w-10">
+                              <div className="absolute left-1/2 top-1 h-4 w-4 -translate-x-1/2 rounded-full bg-slate-400" />
+                              <div className="absolute bottom-0 left-1/2 h-5 w-8 -translate-x-1/2 rounded-t-[999px] bg-slate-400" />
+                            </div>
+                          </div>
+                        )}
+                        <div>
+                          <p className="text-sm font-semibold text-white">
+                            {item.speaker.name}
+                          </p>
+                          <p className="text-xs uppercase tracking-[0.18em] text-slate-400">
+                            {item.speaker.role}
+                          </p>
+                        </div>
+                      </div>
+                      <p className="mt-4 text-sm leading-6 text-slate-300">
+                        {item.speaker.bio}
+                      </p>
+                      {item.speaker.href !== "#" ? (
+                        <a
+                          href={item.speaker.href}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="mt-4 inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-sm font-medium text-[#9fe4d5] transition-colors hover:text-white"
+                        >
+                          View profile
+                        </a>
+                      ) : (
+                        <span className="mt-4 inline-flex items-center rounded-full border border-white/12 bg-white/6 px-4 py-2 text-sm font-medium text-slate-300">
+                          Reveal later
+                        </span>
+                      )}
+                    </aside>
+                  ) : null}
                 </div>
               </article>
             ))}
           </div>
         </section>
 
-        <section className="mt-6 rounded-[2rem] border border-[var(--line)] bg-white/60 p-6 sm:p-8">
-          <p className="text-[0.75rem] uppercase tracking-[0.28em] text-slate-500">
-            Daily structure
-          </p>
-          <div className="mt-6 grid gap-3">
-            {rhythm.map((item) => (
-              <div
-                key={item}
-                className="rounded-2xl border border-[var(--line)] bg-[var(--background)] px-4 py-4 text-sm font-medium text-slate-800"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </section>
       </main>
     </div>
   );

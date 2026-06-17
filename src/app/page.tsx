@@ -1,6 +1,19 @@
 import Image from "next/image";
 import Nav from "./components/Nav";
 
+const supporters = [
+  {
+    src: "/devcon_logo.jpg",
+    alt: "Devcon event artwork",
+    imageClassName: "object-cover object-top",
+  },
+  {
+    src: "/github_logo.png",
+    alt: "GitHub logo",
+    imageClassName: "object-contain",
+  },
+] as const;
+
 export default function Home() {
   return (
     <div className="grain min-h-screen">
@@ -48,7 +61,9 @@ export default function Home() {
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
-                    href="mailto:hello@ethereumbuildcamp.xyz?subject=Ethereum%20Build%20Camp"
+                    href="https://luma.com/gtx71tdi"
+                    target="_blank"
+                    rel="noreferrer"
                     className="inline-flex items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium !text-white transition-transform hover:-translate-y-0.5"
                   >
                     Apply to join
@@ -113,19 +128,45 @@ export default function Home() {
             id="join"
             className="relative z-10 border-t border-[var(--line)] bg-[#f6efe0]/90 px-5 py-8 backdrop-blur-sm sm:px-8 sm:py-10 lg:px-12 lg:py-12"
           >
-            <blockquote className="mt-6 border-l-2 border-slate-400 pl-5">
-              <p className="max-w-2xl text-lg font-medium italic leading-8 text-slate-700 sm:text-xl">
-                &ldquo;Built for the same people who love ETHGlobal, Devcon and builder-first ecosystems. Beginners who want to move fast, make things and meet others doing the same.&rdquo;
-              </p>
-            </blockquote>
-            <div className="mt-4 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
+            <div className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(320px,0.85fr)] lg:items-end">
               <div>
-                <h2 className="mt-6 max-w-2xl text-3xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-4xl">
+                <blockquote className="mt-6 border-l-2 border-slate-400 pl-5">
+                  <p className="max-w-2xl text-lg font-medium italic leading-8 text-slate-700 sm:text-xl">
+                    &ldquo;Built for the same people who love ETHGlobal, Devcon and
+                    builder-first ecosystems. Beginners who want to move fast,
+                    make things and meet others doing the same.&rdquo;
+                  </p>
+                </blockquote>
+                <h2 className="mt-8 max-w-2xl text-3xl font-semibold tracking-[-0.05em] text-slate-950 sm:text-4xl">
                   Learn. Build. Ship on Ethereum.
                 </h2>
               </div>
+
+              <aside className="rounded-[1.5rem] border border-[var(--line)] bg-white/75 p-5 shadow-[0_18px_50px_rgba(19,32,51,0.08)] backdrop-blur-sm sm:p-6">
+                <p className="text-[0.72rem] uppercase tracking-[0.28em] text-slate-500">
+                  Supported by
+                </p>
+                <div className="mt-5 flex flex-wrap items-center gap-3">
+                  {supporters.map((supporter) => (
+                    <div
+                      key={supporter.src}
+                      className="flex h-32 flex-1 items-center justify-center rounded-[1.2rem] border border-[var(--line)] bg-white/85 px-4 py-4 sm:min-w-[180px]"
+                    >
+                      <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-xl bg-slate-950/[0.03] sm:h-24 sm:w-24">
+                        <Image
+                          src={supporter.src}
+                          alt={supporter.alt}
+                          fill
+                          sizes="96px"
+                          className={`${supporter.imageClassName} p-1.5`}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </aside>
+            </div>
           </div>
-        </div>
         </section>
       </main>
     </div>

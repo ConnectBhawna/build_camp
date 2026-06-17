@@ -5,37 +5,31 @@ const tracks = [
     name: "Best use of DeFi",
     description:
       "Build a project around decentralized finance think lending, borrowing, DEXs, yield strategies, or novel financial primitives on-chain",
-    prize: "Mechanical keyboard + goodies",
+    prize: "Mechanical keyboard + goodies + surprize",
   },
   {
     name: "Best use of AI x Ethereum",
     description:
       "Combine AI and Ethereum to create something new autonomous agents, AI-driven smart contracts, on-chain inference or verifiable ML outputs.",
-    prize: "Mechanical keyboard + goodies",
+    prize: "Mechanical keyboard, goodies & surprize",
   },
   {
     name: "Best use of Consumer crypto",
     description:
       "Build a crypto product designed for everyday users focus on seamless UX, real-world utility, and making web3 accessible to the mainstream.",
-    prize: "Mechanical keyboard + goodies",
+    prize: "Mechanical keyboard, goodies & surprize",
   },
   {
     name: "Best use of Infra tooling",
     description:
       "Create tools and infrastructure that help developers build better on Ethereum SDKs, dev tooling, indexers, RPC improvements or protocol primitives.",
-    prize: "Mechanical keyboard + goodies",
+    prize: "Mechanical keyboard, goodies & surprize",
   },
   {
     name: "Best use of Public goods",
     description:
       "Build something that benefits the broader ecosystem open-source tools, community resources, or projects that prioritize impact over profit.",
-    prize: "Mechanical keyboard + goodies",
-  },
-  {
-    name: "Best use of Onchain social",
-    description:
-      "Build social experiences powered by the blockchain decentralized identity, on-chain reputation, community platforms or social graphs.",
-    prize: "Mechanical keyboard + goodies",
+    prize: "Mechanical keyboard, goodies & surprize",
   },
 ];
 

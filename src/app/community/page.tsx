@@ -55,7 +55,8 @@ export default function CommunityPage() {
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
-              href="mailto:hello@ethereumbuildcamp.xyz?subject=Ethereum%20Build%20Camp"
+              href="https://luma.com/gtx71tdi"
+              target="_blank"
               className="inline-flex items-center justify-center rounded-full bg-[var(--foreground)] px-6 py-3 text-sm font-medium !text-white transition-transform hover:-translate-y-0.5"
             >
               Apply to join

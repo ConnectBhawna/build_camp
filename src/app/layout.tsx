@@ -16,6 +16,11 @@ export const metadata: Metadata = {
   title: "Ethereum Build Camp",
   description:
     "A virtual Ethereum bootcamp for builders learning, building, and shipping onchain from July 4 to July 11, 2026.",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
