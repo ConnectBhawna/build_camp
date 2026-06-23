@@ -16,6 +16,7 @@ export default function Nav() {
           <Link href="/program" className="hover:text-slate-950 transition-colors">Curriculum</Link>
           <Link href="/demo-day" className="hover:text-slate-950 transition-colors">Demo Day</Link>
           <Link href="/tracks" className="hover:text-slate-950 transition-colors">Tracks & Prizes</Link>
+          <Link href="/people" className="hover:text-slate-950 transition-colors">People</Link>
           <Link href="/faq" className="hover:text-slate-950 transition-colors">FAQ</Link>
         </nav>
         <Link

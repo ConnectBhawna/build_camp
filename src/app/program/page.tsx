@@ -46,11 +46,12 @@ const program = [
     date: "6 July 2026",
     title: "Building Your First dApp",
     speaker: {
-      name: "Speaker reveal soon",
-      role: "Speaker to be revealed",
-      handle: "Announcement coming soon",
-      href: "#",
-      bio: "We will reveal the speaker for this session soon.",
+      name: "@Viraz04",
+      role: "Session speaker",
+      handle: "@Viraz04",
+      href: "https://x.com/Viraz04",
+      photo: "https://unavatar.io/x/Viraz04",
+      bio: "Focused on helping builders connect contracts to frontend experiences, handle wallets cleanly, and ship their first working dApp.",
     },
     topics: [
       "Frontend and smart contract interaction",
@@ -65,11 +66,12 @@ const program = [
     date: "7 July 2026",
     title: "Modern Ethereum Stack",
     speaker: {
-      name: "Speaker reveal soon",
-      role: "Speaker to be revealed",
-      handle: "Announcement coming soon",
-      href: "#",
-      bio: "We will reveal the speaker for this session soon.",
+      name: "@governingweb3",
+      role: "Session speaker",
+      handle: "@governingweb3",
+      href: "https://x.com/governingweb3",
+      photo: "https://unavatar.io/x/governingweb3",
+      bio: "Focused on the modern Ethereum stack, from Layer 2s and account abstraction to the real-world builder context shaping web3 today.",
     },
     topics: [
       "Layer 2s, account abstraction, and onchain identity",
@@ -103,13 +105,6 @@ const program = [
     day: "Day 6",
     date: "9 July 2026",
     title: "Mentor Office Hours & Iteration",
-    speaker: {
-      name: "Speaker reveal soon",
-      role: "Speaker to be revealed",
-      handle: "Announcement coming soon",
-      href: "#",
-      bio: "We will reveal the speaker for this session soon.",
-    },
     topics: [
       "Office hours with mentors and technical debugging support",
       "UI and UX reviews, contract feedback, and pitch iteration",
@@ -122,13 +117,6 @@ const program = [
     day: "Day 7",
     date: "10 July 2026",
     title: "Buildathon Submission Day",
-    speaker: {
-      name: "Speaker reveal soon",
-      role: "Speaker to be revealed",
-      handle: "Announcement coming soon",
-      href: "#",
-      bio: "We will reveal the speaker for this session soon.",
-    },
     topics: [
       "Submission of Build-a-thon project",
       "Final polish across product, smart contracts, and presentation",
