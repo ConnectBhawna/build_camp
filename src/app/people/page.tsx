@@ -24,11 +24,11 @@ const team = [
     imageSrc: "/surya_image.jpg",
   },
   {
-    name: "Bhawna",
-    initials: "B",
-    href: "https://www.linkedin.com/in/connectbhawna/?locale=en",
+    name: "Umesh",
+    initials: "U",
+    href: "https://www.linkedin.com/in/umeshxkataria/",
     note: "LinkedIn profile",
-    imageSrc: "/team-bhawna.png",
+    imageSrc: "/umesh.jpeg",
   },
 ] as const;
 

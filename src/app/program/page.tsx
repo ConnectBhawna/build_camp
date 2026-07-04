@@ -43,7 +43,7 @@ const program = [
   },
   {
     day: "Day 3",
-    date: "6 July 2026",
+    date: "7 July 2026",
     title: "Building Your First dApp",
     speaker: {
       name: "@Viraz04",
