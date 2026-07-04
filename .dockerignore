@@ -1,9 +1,12 @@
 .DS_Store
 .git
 .gitignore
+.github
 .next
 .vercel
 node_modules
 npm-debug.log*
 Dockerfile
+.env
+.env*
 README.md
