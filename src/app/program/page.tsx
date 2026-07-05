@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 const program = [
   {
     day: "Day 1",
-    date: "4 July 2026",
+    date: "4 July 2026, 2:00 PM UTC",
     title: "Welcome to Ethereum",
     speaker: {
       name: "@Unnati_builds24",
@@ -23,7 +23,7 @@ const program = [
   },
   {
     day: "Day 2",
-    date: "5 July 2026",
+    date: "5 July 2026, 2:00 PM UTC",
     title: "Solidity & Smart Contracts",
     speaker: {
       name: "@panditdhamdhere",
@@ -43,27 +43,7 @@ const program = [
   },
   {
     day: "Day 3",
-    date: "7 July 2026",
-    title: "Building Your First dApp",
-    speaker: {
-      name: "@Viraz04",
-      role: "Session speaker",
-      handle: "@Viraz04",
-      href: "https://x.com/Viraz04",
-      photo: "https://unavatar.io/x/Viraz04",
-      bio: "Focused on helping builders connect contracts to frontend experiences, handle wallets cleanly, and ship their first working dApp.",
-    },
-    topics: [
-      "Frontend and smart contract interaction",
-      "ethers.js or viem, wallet connection, and event handling",
-      "Reading and writing onchain data with confidence",
-    ],
-    highlight: "Hands-on: Build a mini dApp from scratch.",
-    outcome: "Participants ship their first working Ethereum app.",
-  },
-  {
-    day: "Day 4",
-    date: "7 July 2026",
+    date: "7 July 2026, 2:00 PM UTC",
     title: "Modern Ethereum Stack",
     speaker: {
       name: "@governingweb3",
@@ -82,8 +62,28 @@ const program = [
     outcome: "Builders understand real-world Ethereum opportunities.",
   },
   {
+    day: "Day 4",
+    date: "8 July 2026, 8:30 AM UTC",
+    title: "Building Your First dApp",
+    speaker: {
+      name: "@Viraz04",
+      role: "Session speaker",
+      handle: "@Viraz04",
+      href: "https://x.com/Viraz04",
+      photo: "https://unavatar.io/x/Viraz04",
+      bio: "Focused on helping builders connect contracts to frontend experiences, handle wallets cleanly, and ship their first working dApp.",
+    },
+    topics: [
+      "Frontend and smart contract interaction",
+      "ethers.js or viem, wallet connection, and event handling",
+      "Reading and writing onchain data with confidence",
+    ],
+    highlight: "Hands-on: Build a mini dApp from scratch.",
+    outcome: "Participants ship their first working Ethereum app.",
+  },
+  {
     day: "Day 5",
-    date: "8 July 2026",
+    date: "8 July 2026, 2:00 PM UTC ",
     title: "Buildathon Kickoff",
     speaker: {
       name: "@ConnectBhawna",
